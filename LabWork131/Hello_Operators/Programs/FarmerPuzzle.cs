@@ -144,7 +144,6 @@ namespace HelloOperators
 
     public class FarmerPuzzle : SimpleProgram
     {
-        ConsoleColor forReturn;
         public void Run()
         {
             Console.Clear();
