@@ -11,6 +11,7 @@
     <AssemblyName>Hello_Operators</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+	<LangVersion>latestMajor</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,6 +47,7 @@
     <Compile Include="Programs\FarmerPuzzle.cs" />
     <Compile Include="Programs\GuessTheNumber.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Programs\_SimpleProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

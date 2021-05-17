@@ -25,7 +25,7 @@ namespace HelloOperators
 or any other key to exit
             ");
 
-            if (!Enum.TryParse(Console.ReadLine(), out LabVariant UserVariant))
+            if (!Enum.TryParse(Console.ReadLine(), out LabVariant UserVariant) || !Enum.IsDefined(typeof(LabVariant), UserVariant))
             {
                 Console.WriteLine(@"Exit
 Press any key");

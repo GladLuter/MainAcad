@@ -30,6 +30,7 @@ namespace HelloOperators
 
     public class Coast
     {
+        ConsoleColor forReturn;
         public Coast(bool first = false)
         {
             isFarmare = first;
@@ -109,32 +110,9 @@ namespace HelloOperators
             return true;
 
         }
-        //public void SetProperty(FarmerProperty property) 
-        //{
-        //    if (isFarmare) {
-        //        switch (property)
-        //        {
-        //            case LabVariant.Type1:
-        //                return new FarmerPuzzle();
-        //            //break;
-        //            case LabVariant.Type2:
-        //                return new Calculator();
-        //            //break;
-        //            case LabVariant.Type3:
-        //                return new Factorial();
-        //            //break;
-        //            case LabVariant.Type4:
-        //                return new GuessTheNumber();
-        //            //break;
-        //            default:
-        //                return null;
-        //        }
-        //    }
-        //}
-
         public void ShowCoast() 
         {
-            ConsoleColor forReturn = Console.ForegroundColor;
+            forReturn = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("On this coast we have:");
             Console.WriteLine("Farmare:" + (isFarmare ? "1" : "0"));
@@ -142,7 +120,6 @@ namespace HelloOperators
             Console.WriteLine("Goat:" + (isGoat ? "1" : "0"));
             Console.WriteLine("Cabbage:" + (isCabbage ? "1" : "0"));
             Console.ForegroundColor = forReturn;
-
         }
 
         public bool AllIn()
@@ -157,7 +134,7 @@ namespace HelloOperators
 
         private void ShowError(string error)
         {
-            ConsoleColor forReturn = Console.ForegroundColor;
+            forReturn = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(error);
             Console.ForegroundColor = forReturn;
@@ -165,8 +142,9 @@ namespace HelloOperators
 
     }
 
-    public class FarmerPuzzle
+    public class FarmerPuzzle : SimpleProgram
     {
+        ConsoleColor forReturn;
         public void Run()
         {
             Console.Clear();
@@ -176,11 +154,10 @@ namespace HelloOperators
             Coast coast1 = new Coast(true);
             Coast coast2 = new Coast();
             FarmerProperty? farmerProperty;
-            ConsoleColor forReturn;
 
             while (true)
             {
-                UserAnswer = AskUser();
+                UserAnswer = AskUser("Please,  type numbers by step (0 to repeat)");
                 if (UserAnswer.ToLower() == "q") {
                     return;
                 } 
@@ -302,20 +279,6 @@ You can do whatever how many flights. How to transport the wolf, goat and cabbag
                 }
             }
             return false;
-        }
-
-        private void ShowError(string error)
-        {
-            ConsoleColor forReturn = Console.ForegroundColor;
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(error);
-            Console.ForegroundColor = forReturn;
-        }
-
-        private string AskUser(){
-            Console.ForegroundColor = ConsoleColor.Gray;
-            Console.WriteLine("Please,  type numbers by step (0 to repeat)");
-            return Console.ReadLine();
         }
     }
 }
