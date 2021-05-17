@@ -157,7 +157,7 @@ namespace HelloOperators
 
             while (true)
             {
-                UserAnswer = AskUser("Please,  type numbers by step (0 to repeat)");
+                UserAnswer = AskUser("Please,  type numbers by step (0 to repeat the rules)");
                 if (UserAnswer.ToLower() == "q") {
                     return;
                 } 

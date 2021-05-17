@@ -29,7 +29,7 @@ namespace HelloOperators
 
             while (true)
             {
-                UserAnswer = AskUser("Please,  type numbers by step (0 to repeat)");
+                UserAnswer = AskUser("Please,  type numbers by step (0 to repeat the rules)");
                 if (UserAnswer.ToLower() == "q")
                 {
                     return;
@@ -109,12 +109,7 @@ namespace HelloOperators
                             UserNumbers[2] = Math.Pow((double)UserNumbers[0], (double)UserNumbers[1]);
                             break;
                     }
-                    forReturn = Console.ForegroundColor;
-                    Console.ForegroundColor = ConsoleColor.Yellow;
-                    Console.WriteLine(UserNumbers[0] + " " + GetSymbol(SelectedVariant) + " " + UserNumbers[1] + " = " + UserNumbers[2]);
-                    Console.ForegroundColor = forReturn;
-                    Console.WriteLine();
-                    Console.WriteLine();
+                    ShowResult(UserNumbers[0] + " " + GetSymbol(SelectedVariant) + " " + UserNumbers[1] + " = " + UserNumbers[2]);                  
                     ShowTheCondition();
                     break;
                 }

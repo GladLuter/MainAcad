@@ -22,6 +22,14 @@ namespace HelloOperators
             Console.WriteLine(text);
             return Console.ReadLine();
         }
-
+        public void ShowResult(string text)
+        {
+            forReturn = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(text);
+            Console.ForegroundColor = forReturn;
+            Console.WriteLine();
+            Console.WriteLine();
+        }
     }
 }
