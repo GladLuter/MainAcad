@@ -48,7 +48,7 @@ namespace HelloOperators
                     calculations.Add(result);
                 }
 
-                ShowResult(parseResult + "! = " + result);
+                ShowResult($"{parseResult}! = {result}");
 
             }
 

@@ -109,7 +109,7 @@ namespace HelloOperators
                             UserNumbers[2] = Math.Pow((double)UserNumbers[0], (double)UserNumbers[1]);
                             break;
                     }
-                    ShowResult(UserNumbers[0] + " " + GetSymbol(SelectedVariant) + " " + UserNumbers[1] + " = " + UserNumbers[2]);                  
+                    ShowResult($"{UserNumbers[0]} {GetSymbol(SelectedVariant)} {UserNumbers[1]} = {UserNumbers[2]}");                  
                     ShowTheCondition();
                     break;
                 }

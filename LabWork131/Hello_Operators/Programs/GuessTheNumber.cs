@@ -38,7 +38,7 @@ namespace HelloOperators
                     continue;
                 } else if(parseResult > maxVal || parseResult < minVal)
                 {
-                    ShowError("You must enter number between " + minVal + " and " + maxVal);
+                    ShowError($"You must enter number between {minVal} and {maxVal}");
                     continue;
                 }
 
@@ -46,14 +46,14 @@ namespace HelloOperators
 
                 if (parseResult > num)
                 {
-                    SendMessage(parseResult + " - Too high!", ConsoleColor.Magenta);
+                    SendMessage($"{parseResult} - Too high!", ConsoleColor.Magenta);
                 } else if (parseResult < num)
                 {
-                    SendMessage(parseResult + " - Too low!", ConsoleColor.Blue);
+                    SendMessage($"{parseResult} - Too low!", ConsoleColor.Blue);
                 }
                 else
                 {
-                    SendMessage(parseResult + " is right! Conngratilations, you try only " + counter + " times!", ConsoleColor.Cyan);
+                    SendMessage($"{parseResult} is right! Conngratilations, you try only {counter} times!", ConsoleColor.Cyan);
                     Console.ReadLine();
                     return;
                 }
