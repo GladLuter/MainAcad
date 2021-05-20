@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello_Operators", "Hello_Operators\Hello_Operators.csproj", "{A13C697D-183F-48A0-8098-0C51AB93382C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork114", "..\LabWork141\LabaWork114\LabaWork114.csproj", "{F565420A-E8AD-49D9-B962-57B609660CBC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork114", "..\LabWork141\LabaWork114.csproj", "{F565420A-E8AD-49D9-B962-57B609660CBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
