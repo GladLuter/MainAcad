@@ -31,5 +31,11 @@ namespace HelloOperators
             Console.WriteLine();
             Console.WriteLine();
         }
+
+        public virtual void Run()
+        {
+            ShowError("You must override this comand");
+            return;
+        }
     }
 }

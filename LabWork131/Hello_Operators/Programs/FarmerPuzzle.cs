@@ -144,7 +144,7 @@ namespace HelloOperators
     
     public class FarmerPuzzle : SimpleProgram
     {
-        public void Run()
+        public override void Run()
         {
             Console.Clear();
             ShowTheCondition();

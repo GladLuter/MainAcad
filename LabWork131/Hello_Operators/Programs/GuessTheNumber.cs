@@ -8,7 +8,7 @@ namespace HelloOperators
 {
     class GuessTheNumber : SimpleProgram
     {
-        public void Run()
+        public override void Run()
         {
             const int minVal = 1;
             const int maxVal = 100;

@@ -8,7 +8,7 @@ namespace HelloOperators
 {
     class Factorial : SimpleProgram
     {
-        public void Run()
+        public override void Run()
         {
             Console.Clear();
             ShowTheCondition();

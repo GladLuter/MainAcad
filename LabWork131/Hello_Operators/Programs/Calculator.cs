@@ -17,7 +17,7 @@ namespace HelloOperators
     }
     class Calculator : SimpleProgram
     {
-        public void Run()
+        public override void Run()
         {
             const int UserNumbersCount = 2;
             Console.Clear();
