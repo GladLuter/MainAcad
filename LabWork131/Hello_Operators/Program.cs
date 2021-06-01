@@ -43,7 +43,7 @@ Press any key");
             Console.ReadLine();
         }
 
-        static dynamic GetProgramm(LabVariant Variant) {
+        private static SimpleProgram GetProgramm(LabVariant Variant) {
 
             switch (Variant)
             {
