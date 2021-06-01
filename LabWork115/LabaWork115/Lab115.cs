@@ -124,22 +124,20 @@ namespace LabaWork115
 
                 //Use concatenation of these two strings 
                 //Note it is necessary to use some symbol ( for example “#”) to separate
-
                 string separate = "#";
 
+                //Realize the  algorithm for replacing '1#1' to '#' by using the for loop 
                 for (int i = 0; i <= Math.Min(UserNumbers[1], UserNumbers[2]) + 1; i++)
                 {
-                    if(UserNumbers[1]-i < 0 || UserNumbers[2] - i < 0) { separate = "1"; }
+                    //Delete the '#' from algorithm result
+                    if (UserNumbers[1] - i < 0 && UserNumbers[2] - i < 0) { separate = ""; } //Check the numbers on the equality 0
+                    else if (UserNumbers[1]-i < 0 || UserNumbers[2] - i < 0) { separate = "1"; }
+                    //Output the result 
                     Console.WriteLine($"{((UserNumbers[1] - i > 0) ? new String('1', UserNumbers[1] - i): "")}" +
                         $"{separate}" +
                         $"{((UserNumbers[2] - i > 0) ? new String('1', UserNumbers[2] - i) : "")}");
                 }
-
-                //Check the numbers on the equality 0
-                //Realize the  algorithm for replacing '1#1' to '#' by using the for loop 
-                //Delete the '#' from algorithm result
-
-                //Output the result 
+                                             
                 break;
             }
         }
