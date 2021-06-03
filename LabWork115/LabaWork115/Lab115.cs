@@ -67,16 +67,37 @@ namespace LabaWork115
         #region ToFromBinary
         static void My_Binary()
         {
-            //Implement positive integer variable input
 
-            //Present it like binary string
-            //   For example, 4 as 100
+            string UserAnswer;
+            int parseResult;
+            string ResultInBin;
+            int ResultModulus;
 
-            //Use modulus operator to obtain the remainder  (n % 2) 
-            //and divide variable by 2 in the loop
+            while (true)
+            {
+                //Implement positive integer variable input
+                UserAnswer = ConsoleFunc.AskUser("Please,  enter 1 positive number");
+                if (int.TryParse(UserAnswer, out parseResult) && parseResult <= 0) { continue; }
 
-            //Use the ToCharArray() method to transform string to chararray
-            //and Array.Reverse() method
+                //Present it like binary string
+                //   For example, 4 as 100
+                ResultInBin = Convert.ToString(parseResult, 2);
+                Console.WriteLine($"int {parseResult} in binary is {ResultInBin}");
+
+                //Use modulus operator to obtain the remainder  (n % 2) sequentially
+                ResultModulus = parseResult % 2;
+                Console.WriteLine($"int {parseResult} % 2 = {ResultModulus}");
+                //and divide variable by 2 in the loop
+                Console.WriteLine($"int {ResultModulus} / 2 = {ResultModulus / 2}");
+
+                //Use the ToCharArray() method to transform string to chararray
+                var ResultInArray = ResultInBin.ToCharArray();
+                //and Array.Reverse() method
+                Array.Reverse(ResultInArray); 
+                Console.WriteLine($"bin {ResultInBin} in reverse is {new string(ResultInArray)}");
+
+                break;
+            }                      
 
         }
         #endregion
@@ -206,18 +227,48 @@ namespace LabaWork115
         static void Morse_code()
         {
             //Create string variable for 'sos'      
-
+            string UserAnswer;
+            char[] CharArray;
             //Use string array for Morse code
             string[,] Dictionary_arr = new string[,] { { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" },
             { ".-   ", "-... ", "-.-. ", "-..  ", ".    ", "..-. ", "--.  ", ".... ", "..   ", ".--- ", "-.-  ", ".-.. ", "--   ", "-.   ", "---  ", ".--. ", "--.- ", ".-.  ", "...  ", "-    ", "..-  ", "...- ", ".--  ", "-..- ", "-.-- ", "--.. ", "-----", ".----", "..---", "...--", "....-", ".....", "-....", "--...", "---..", "----." }};
-            //Use ToCharArray() method for string to copy charecters to Unicode character array
-            //Use foreach loop for character array in which
 
-            //Implement Console.Beep(1000, 250) for '.'
-            // and Console.Beep(1000, 750) for '-'
+            while (true)
+            {
+                UserAnswer = ConsoleFunc.AskUser("Please,  enter text for morse");
+                if (UserAnswer.Length == 0) { continue; }
+                UserAnswer = UserAnswer.ToLower();
+                foreach (var item in UserAnswer)
+                {
+                    for (int i = 0; i < Dictionary_arr.GetUpperBound(1); i++)
+                    {
+                        if (item.ToString() == Dictionary_arr[0, i])
+                        {
+                            //Use ToCharArray() method for string to copy charecters to Unicode character array
+                            CharArray = Dictionary_arr[1, i].ToCharArray();
+                            //Use foreach loop for character array in which
+                            foreach (var item2 in CharArray)
+                            {
+                                switch (item2)
+                                {
+                                    case '.': //Implement Console.Beep(1000, 250) for '.'
+                                        Console.Beep(1000, 250);
+                                        break;
+                                    case '-': // and Console.Beep(1000, 750) for '-'
+                                        Console.Beep(1000, 750);
+                                        break;
+                                    default: //Use Thread.Sleep(50) to separate sounds
+                                        Thread.Sleep(50);
+                                        break;
+                                }
+                            }
+                        }
+                    }
+                }
 
-            //Use Thread.Sleep(50) to separate sounds
-            //                  
+                break;
+            }
+                         
         }
 
         #endregion
