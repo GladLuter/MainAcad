@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "LabaWork115/1.0.0": {
+        "dependencies": {
+          "_UsefulFunctions": "1.0.0"
+        },
+        "runtime": {
+          "LabaWork115.dll": {}
+        }
+      },
+      "_UsefulFunctions/1.0.0": {
+        "runtime": {
+          "_UsefulFunctions.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LabaWork115/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "_UsefulFunctions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
