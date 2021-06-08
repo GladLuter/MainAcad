@@ -7,11 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork113", "..\LabWork11
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork114", "..\LabWork114\LabaWork114.csproj", "{F565420A-E8AD-49D9-B962-57B609660CBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork115", "..\LabWork115\LabaWork115.csproj", "{AF777986-2F3D-4D8C-8E75-1CFFAFB0FCD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork115", "..\LabWork115\LabaWork115.csproj", "{AF777986-2F3D-4D8C-8E75-1CFFAFB0FCD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_UsefulFunctions", "..\_UsefulFunctions\_UsefulFunctions.csproj", "{3A77233D-A2FC-494E-B0F8-1955D5A6995A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_UsefulFunctions", "..\_UsefulFunctions\_UsefulFunctions.csproj", "{3A77233D-A2FC-494E-B0F8-1955D5A6995A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork121", "..\LabWork121\LabaWork121.csproj", "{33286F39-8598-4A2D-B8C4-30B32D6687F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork121", "..\LabWork121\LabaWork121.csproj", "{33286F39-8598-4A2D-B8C4-30B32D6687F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork122", "..\LabWork122\LabaWork122.csproj", "{73B7D98D-188D-4835-A11F-910CAC5B6E79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{33286F39-8598-4A2D-B8C4-30B32D6687F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33286F39-8598-4A2D-B8C4-30B32D6687F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33286F39-8598-4A2D-B8C4-30B32D6687F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73B7D98D-188D-4835-A11F-910CAC5B6E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73B7D98D-188D-4835-A11F-910CAC5B6E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73B7D98D-188D-4835-A11F-910CAC5B6E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73B7D98D-188D-4835-A11F-910CAC5B6E79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
