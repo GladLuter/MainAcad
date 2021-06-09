@@ -15,14 +15,23 @@ namespace LabaWork122
             StringBuilder QuestionTxt = new StringBuilder();
 
             //Implement start position, width and height input
-            while (StartPosition == 0 && Width == 0 && Height == 0)
+            while (StartPosition == 0 || Width == 0 || Height == 0)
             {
                 if (StartPosition == 0)
+                {
+                    QuestionTxt.Clear();
                     QuestionTxt.Append("Please, enter start position");
+                }
                 else if (Width == 0)
+                {
+                    QuestionTxt.Clear();
                     QuestionTxt.Append("Please, enter width of box");
+                }
                 else if (Height == 0)
+                {
+                    QuestionTxt.Clear();
                     QuestionTxt.Append("Please, enter height of box");
+                }
 
                 UserAnswer = ConsoleFunc.AskUser(QuestionTxt.ToString());
 

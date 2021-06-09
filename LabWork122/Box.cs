@@ -25,7 +25,7 @@ namespace LabaWork122
         //Trim the message if necessary
         public void Draw()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }
