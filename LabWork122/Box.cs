@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LabaWork122
 {
-    class Box
+    public class Box : IBox
     {
         //1.  Implement public  auto-implement properties for start position (point position)
         //auto-implement properties for width and height of the box
@@ -23,5 +23,9 @@ namespace LabaWork122
         //Change the message in the method to return the Box square
         //Use Console.SetCursorPosition() method
         //Trim the message if necessary
+        public void Draw()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
