@@ -9,6 +9,7 @@ namespace LabaWork122
     public class Box : IBox
     {
         private int[] BoxParams;
+        private const int QtyBorders = 2;
         public Box(int[] BoxParams_, char Symbol_, string message_)
         {
             BoxParams = BoxParams_;
@@ -35,19 +36,25 @@ namespace LabaWork122
         public void Draw()
         {
             int i;
-            for (i = 0; i < BoxParams.Length; i++)
+            for (i = 1; i < BoxParams.Length; i++)
             {
                 StartPosition = Math.Min(StartPosition, BoxParams[i]);
                 Width = Math.Max(Width, BoxParams[i]);
             }
-            for (i = 0; i < BoxParams.Length; i++)
+            for (i = 1; i < BoxParams.Length; i++)
             {
                 if (StartPosition == BoxParams[i] || Width == BoxParams[i])
                     continue;
                 Height = BoxParams[i];
                 break;
             }
+            // for square:
+            if (Height == int.MinValue)
+                Height = Width;
 
+            // for border in each side
+            Width += QtyBorders; 
+            Height += QtyBorders;
             draw();
 
         }
@@ -57,25 +64,39 @@ namespace LabaWork122
         //Use Console.SetCursorPosition() method
         //Trim the message if necessary
         private void draw()
-        {
+        {            
             Console.Clear();
             Console.CursorTop = 0;
             Console.CursorLeft = StartPosition;
             Console.WriteLine(new string(Symbol, Width));
-            string[] messageArr = message.Split(null, Height - 2);
-            for (int i = 0; i < Height; i++)
+
+            string[] messageArr = new string[Height - QtyBorders];//message.Split(null, Height - 2);
+            //substring to fill up arr
+            int SplitPosition = 0, LineLen = 0, i;
+
+            for (i = 0; i < Height - QtyBorders; i++)
+            {
+                LineLen = Math.Min(message.Length - SplitPosition, Width - QtyBorders);
+                messageArr[i] = message.Substring(SplitPosition, LineLen);               
+                if (LineLen < Width - QtyBorders)
+                    break;
+                SplitPosition += Width - QtyBorders;
+            }
+            for (i = 0; i < Height - QtyBorders; i++)
             {
                 Console.CursorLeft = StartPosition;
                 Console.Write(Symbol);
-                if(messageArr.Length >= i + 1)
+                if (messageArr.Length >= i + 1 && messageArr[i] is not null)
                 {
                     Console.Write(messageArr[i]);
-                    if (messageArr[i].Length < Width - 2)
+                    if (messageArr[i].Length < Width - QtyBorders)
                     {
-                        Console.Write(new string(' ', Width - messageArr[i].Length - 2));
+                        Console.Write(new string(' ', Width - messageArr[i].Length - QtyBorders));
                     }
-                }else { 
-                    Console.Write(new string(' ', Width-2)); 
+                }
+                else
+                {
+                    Console.Write(new string(' ', Width - QtyBorders));
                 }
                 Console.WriteLine(Symbol);
             }
