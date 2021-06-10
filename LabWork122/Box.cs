@@ -62,7 +62,7 @@ namespace LabaWork122
             Console.CursorTop = 0;
             Console.CursorLeft = StartPosition;
             Console.WriteLine(new string(Symbol, Width));
-            string[] messageArr = message.Split(default(char[]), Height-2);
+            string[] messageArr = message.Split(null, Height - 2);
             for (int i = 0; i < Height; i++)
             {
                 Console.CursorLeft = StartPosition;
