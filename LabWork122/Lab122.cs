@@ -9,39 +9,25 @@ namespace LabaWork122
         static void Main(string[] args)
         {
             string UserAnswer;
-            int StartPosition = 0, Width = 0, Height = 0, UserAnswerInt = 0;
+            string[] UserAnswerArr;
+            int[] BoxParams = new int[4];
             char? Symbol = null;
             string message = "";
-            StringBuilder QuestionTxt = new StringBuilder();
 
             //Implement start position, width and height input
-            while (StartPosition == 0 || Width == 0 || Height == 0)
-            {
-                if (StartPosition == 0)
+            while (BoxParams[0] < BoxParams.Length - 1)
+            {                     
+                UserAnswer = ConsoleFunc.AskUser("Please, enter Box parameters (start position, width and height)");
+                UserAnswerArr = UserAnswer.Split();
+                if (UserAnswerArr.Length == 0)
                 {
-                    QuestionTxt.Clear();
-                    QuestionTxt.Append("Please, enter start position");
+                    continue;
                 }
-                else if (Width == 0)
+                for (int i = 0; i < UserAnswerArr.Length; i++)
                 {
-                    QuestionTxt.Clear();
-                    QuestionTxt.Append("Please, enter width of box");
+                    if (!int.TryParse(UserAnswerArr[i], out BoxParams[BoxParams[0] + 1]) || BoxParams[BoxParams[0] + 1] <= 0) { break; }     
+                    BoxParams[0]++;
                 }
-                else if (Height == 0)
-                {
-                    QuestionTxt.Clear();
-                    QuestionTxt.Append("Please, enter height of box");
-                }
-
-                UserAnswer = ConsoleFunc.AskUser(QuestionTxt.ToString());
-
-                if (int.TryParse(UserAnswer, out UserAnswerInt) && UserAnswerInt <= 0) { continue; }
-                else if (StartPosition == 0)
-                    StartPosition = UserAnswerInt;
-                else if (Width == 0)
-                    Width = UserAnswerInt;
-                else if (Height == 0)
-                    Height = UserAnswerInt;
             }
 
             //Implement symbol input
@@ -70,7 +56,7 @@ namespace LabaWork122
             try
             {
                 //Create Box class instance
-                Box box = new Box();
+                Box box = new Box(BoxParams, (char)Symbol, message);
                 //Use  Box.Draw() method
                 box.Draw();
 
