@@ -18,14 +18,20 @@ namespace LabaWork131
 
                 int[] arr = new int[4] { 1, 4, 8, 5 };
                 ma.Assign(arr, 4);
+                //arr[2] = 0;
 
             }
 
             // 8) catch all other exceptions here
-            catch
+            catch(Exception ex)
             {
                 // 9) print System.Exception properties:
                 // HelpLink, Message, Source, StackTrace, TargetSite
+                Console.WriteLine(@$"HelpLink:{ex.HelpLink}
+Messafe:{ex.Message}
+Source:{ex.Source}
+StackTrace:{ex.StackTrace}
+TargetSite:{ex.TargetSite}");
 
             }
 
@@ -33,7 +39,7 @@ namespace LabaWork131
             // explain features of block finally
             finally
             {
-
+                Console.WriteLine("Call of finally in CatchExceptionClass.CatchExceptionMethod()");
             }
         }
     }
