@@ -4,6 +4,7 @@ namespace LabaWork124
 {
     abstract class String_matrix
     {
+       
 
         public const int Size1 = 2, Size2 = Alphabet.Size;
         private string[,] str_matrix = new string[Size1, Size2];
@@ -14,7 +15,6 @@ namespace LabaWork124
             get { return str_matrix[x, y]; }
             set { str_matrix[x, y] = value; }
         }
-
 
         public void Write_matrix()
         {

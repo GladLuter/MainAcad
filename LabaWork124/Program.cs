@@ -69,7 +69,7 @@ namespace LabaWork124
             string word = "sos";
             Morse_matrix code_tbl = new Morse_matrix();
             code_tbl.Write_matrix();
-            string rslt = code_tbl.crypt(word);
+            string rslt = code_tbl.Crypt(word);
             Console.WriteLine("sos : " + rslt);
             code_tbl.Res_beep(rslt);
 
@@ -82,7 +82,7 @@ namespace LabaWork124
             code_tbl.Write_matrix();
             Console.WriteLine("From beep to sos");
             string[] sos = { "...  ", "---  ", "...  " };
-            word = code_tbl.decrypt(sos);
+            word = code_tbl.Decrypt(sos);
             Console.WriteLine("sos decrypt   :" + word);
         }
 
@@ -94,13 +94,13 @@ namespace LabaWork124
             int b = int.Parse(Console.ReadLine());
             Morse_matrix code_tbl = new Morse_matrix(Alphabet.Dictionary_arr, b);
             code_tbl.Write_matrix();
-            string rslt = code_tbl.crypt(word);
+            string rslt = code_tbl.Crypt(word);
             Console.WriteLine("sos : " + rslt);
             code_tbl.Res_beep(rslt);
 
             Console.WriteLine("From beep to sos");
             string[] sos = { rslt.Substring(0, 5), rslt.Substring(5, 5), rslt.Substring(10, 5) };
-            word = code_tbl.decrypt(sos);
+            word = code_tbl.Decrypt(sos);
             Console.WriteLine("sos decrypt   :" + word);
         }
 
