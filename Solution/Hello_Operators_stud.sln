@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork113", "..\LabWork113\LabaWork113.csproj", "{A13C697D-183F-48A0-8098-0C51AB93382C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork113", "..\LabaWork113\LabaWork113.csproj", "{A13C697D-183F-48A0-8098-0C51AB93382C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork114", "..\LabWork114\LabaWork114.csproj", "{F565420A-E8AD-49D9-B962-57B609660CBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork114", "..\LabaWork114\LabaWork114.csproj", "{F565420A-E8AD-49D9-B962-57B609660CBC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork115", "..\LabWork115\LabaWork115.csproj", "{AF777986-2F3D-4D8C-8E75-1CFFAFB0FCD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork115", "..\LabaWork115\LabaWork115.csproj", "{AF777986-2F3D-4D8C-8E75-1CFFAFB0FCD4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_UsefulFunctions", "..\_UsefulFunctions\_UsefulFunctions.csproj", "{3A77233D-A2FC-494E-B0F8-1955D5A6995A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork121", "..\LabWork121\LabaWork121.csproj", "{33286F39-8598-4A2D-B8C4-30B32D6687F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork121", "..\LabaWork121\LabaWork121.csproj", "{33286F39-8598-4A2D-B8C4-30B32D6687F3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork122", "..\LabWork122\LabaWork122.csproj", "{73B7D98D-188D-4835-A11F-910CAC5B6E79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork122", "..\LabaWork122\LabaWork122.csproj", "{73B7D98D-188D-4835-A11F-910CAC5B6E79}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork123", "..\LabaWork123\LabaWork123.csproj", "{AA6A2E3B-6394-4770-A4FE-569ECC768ACB}"
 EndProject
