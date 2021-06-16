@@ -15,13 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork121", "..\LabaWork1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork122", "..\LabaWork122\LabaWork122.csproj", "{73B7D98D-188D-4835-A11F-910CAC5B6E79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork123", "..\LabaWork123\LabaWork123.csproj", "{AA6A2E3B-6394-4770-A4FE-569ECC768ACB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork123", "..\LabaWork123\LabaWork123.csproj", "{AA6A2E3B-6394-4770-A4FE-569ECC768ACB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork124", "..\LabaWork124\LabaWork124.csproj", "{FFD367CF-0F75-443E-8FCF-55BFE1C1C9DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork124", "..\LabaWork124\LabaWork124.csproj", "{FFD367CF-0F75-443E-8FCF-55BFE1C1C9DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork131", "..\LabaWork131\LabaWork131.csproj", "{4DEF3854-3569-416A-9097-5328031951F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork131", "..\LabaWork131\LabaWork131.csproj", "{4DEF3854-3569-416A-9097-5328031951F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork132", "..\LabaWork132\LabaWork132.csproj", "{CBA39070-B64B-4335-8E17-EE0ABF3EA887}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork132", "..\LabaWork132\LabaWork132.csproj", "{CBA39070-B64B-4335-8E17-EE0ABF3EA887}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork141", "..\LabaWork141\LabaWork141.csproj", "{9BE1981E-CCC1-49A6-B6B0-F11499E83390}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{CBA39070-B64B-4335-8E17-EE0ABF3EA887}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBA39070-B64B-4335-8E17-EE0ABF3EA887}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBA39070-B64B-4335-8E17-EE0ABF3EA887}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BE1981E-CCC1-49A6-B6B0-F11499E83390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE1981E-CCC1-49A6-B6B0-F11499E83390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE1981E-CCC1-49A6-B6B0-F11499E83390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE1981E-CCC1-49A6-B6B0-F11499E83390}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
