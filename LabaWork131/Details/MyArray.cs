@@ -31,7 +31,7 @@ namespace LabaWork131
 
                     // 7) use unchecked to assign result of operation 1000000000 * 100 
                     // to last cell of array
-                    arr[arr.Length - 1] = 1000000000 * 100;
+                    //arr[arr.Length - 1] = 1000000000 * 100;
 
                     //NullReferenceException
                     CatchExceptionClass test = null;
