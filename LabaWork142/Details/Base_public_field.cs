@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LabaWork142.Details
+namespace LabaWork142
 {
     public class Base_public_field<T> where T : new()
     {

@@ -83,7 +83,7 @@ namespace LabaWork142
         static void Swap<T>() where T : new()
         {
             T puzzle = new T();
-            Console.WriteLine("");
+            Console.WriteLine($"It was Swap<{puzzle.GetType()}>");
         }
         #region Gen_List_Func
         static void Gen_List_Func()
