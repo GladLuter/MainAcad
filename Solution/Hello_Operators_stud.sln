@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork141", "..\LabaWork1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork142", "..\LabaWork142\LabaWork142.csproj", "{D6EC030E-41CF-4A9B-88A2-5470286B6F1E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork143", "..\LabaWork143\LabaWork143.csproj", "{FCC34E83-5A0D-4D7E-B6CB-1BBA9B7A7D03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{D6EC030E-41CF-4A9B-88A2-5470286B6F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6EC030E-41CF-4A9B-88A2-5470286B6F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6EC030E-41CF-4A9B-88A2-5470286B6F1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCC34E83-5A0D-4D7E-B6CB-1BBA9B7A7D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCC34E83-5A0D-4D7E-B6CB-1BBA9B7A7D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCC34E83-5A0D-4D7E-B6CB-1BBA9B7A7D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCC34E83-5A0D-4D7E-B6CB-1BBA9B7A7D03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
