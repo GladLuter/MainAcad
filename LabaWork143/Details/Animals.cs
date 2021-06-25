@@ -29,6 +29,12 @@ namespace LabaWork143
             CurIdx++;
             AnimalsArr[CurIdx] = new Animal(Genus_, Weight_);
         }
+
+        public void Sort(IComparer<Animal> SortingType)
+        {
+            Array.Sort(AnimalsArr, SortingType);
+        }
+
         // 9) implement method GetEnumerator(), which returns IEnumerator
         // use foreach on array of Animal
         // and yield return for every animal

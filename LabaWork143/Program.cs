@@ -26,8 +26,21 @@ namespace LabaWork143
                 Console.WriteLine($"Genus: {item.Genus}; Weight:{item.Weight}");
             }
 
-            List<Animal> tst = new List<Animal>();
-            tst.Sort(new Animal.SortWeightAscending());
+            Animals.Sort(Animal.SortWeightAscending());
+            Console.WriteLine(new string('-', 100));
+            Console.WriteLine($"Used SortWeightAscending");
+            foreach (Animal item in Animals)
+            {
+                Console.WriteLine($"Genus: {item.Genus}; Weight:{item.Weight}");
+            }
+
+            Animals.Sort(Animal.SortGenusDescending());
+            Console.WriteLine(new string('-', 100));
+            Console.WriteLine($"Used SortGenusDescending");
+            foreach (Animal item in Animals)
+            {
+                Console.WriteLine($"Genus: {item.Genus}; Weight:{item.Weight}");
+            }
 
 
             Console.ReadLine();
