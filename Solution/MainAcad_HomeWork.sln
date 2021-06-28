@@ -25,11 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork132", "..\LabaWork1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork141", "..\LabaWork141\LabaWork141.csproj", "{9BE1981E-CCC1-49A6-B6B0-F11499E83390}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork142", "..\LabaWork142\LabaWork142.csproj", "{D6EC030E-41CF-4A9B-88A2-5470286B6F1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork142", "..\LabaWork142\LabaWork142.csproj", "{D6EC030E-41CF-4A9B-88A2-5470286B6F1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork143", "..\LabaWork143\LabaWork143.csproj", "{FCC34E83-5A0D-4D7E-B6CB-1BBA9B7A7D03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork143", "..\LabaWork143\LabaWork143.csproj", "{FCC34E83-5A0D-4D7E-B6CB-1BBA9B7A7D03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabaWork151", "..\LabaWork151\LabaWork151.csproj", "{DBC4E29F-23F4-4A09-992D-6DB14E2EC9FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabaWork151", "..\LabaWork151\LabaWork151.csproj", "{DBC4E29F-23F4-4A09-992D-6DB14E2EC9FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
