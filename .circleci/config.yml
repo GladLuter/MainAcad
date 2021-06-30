@@ -10,7 +10,7 @@ jobs:
     # Be sure to update the tag on this image to a more stable version, using latest can result in unstable builds.
     docker:
       - image: microsoft/dotnet:latest
-    working_directory: ~/LabaWork143 
+    working_directory: ~/Solution 
     steps:
       # Checkout the code as the first step.
       - checkout
