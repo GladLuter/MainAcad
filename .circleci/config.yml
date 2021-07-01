@@ -14,16 +14,9 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
-      - restore_cache:
-            keys:
-                - dotnet-packages-v1-{{ checksum "LabaWork143/LabaWork143.csproj" }}
       - run:
             name: Restore packages
             command: dotnet restore
-      - save_cache:
-          paths:
-            - C:\Users\circleci\.nuget\packages
-          key: dotnet-packages-v1-{{ checksum "LabaWork143/LabaWork143.csproj" }}
       - run:
             #working_directory: ~/LabaWork143
             name: build
