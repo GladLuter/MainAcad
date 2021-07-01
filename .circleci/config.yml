@@ -15,7 +15,7 @@ jobs:
       # Checkout the code as the first step.
       - checkout
       - run:
-            path: ~/LabaWork143
+            working_directory: ~/LabaWork143
             name: Restore packages
             command: dotnet restore
       - run:
