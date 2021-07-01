@@ -8,16 +8,16 @@ jobs:
     # These next lines define a Docker executor: https://circleci.com/docs/2.0/executor-types/
     # You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # Be sure to update the tag on this image to a more stable version, using latest can result in unstable builds.
-    working_directory: ~/Solution
+    working_directory: ~/LabaWork143
     docker:
       - image: mcr.microsoft.com/dotnet/sdk:5.0 #microsoft/dotnet:latest 
     steps:
       # Checkout the code as the first step.
       - checkout
       - run:
-            #working_directory: ~/LabaWork143
+            working_directory: ~/Solution
             name: Restore packages
-            command: npm --prefix ./LabaWork143 run dotnet restore
+            command: dotnet restore
       - run:
             #working_directory: ~/LabaWork143
             name: build
