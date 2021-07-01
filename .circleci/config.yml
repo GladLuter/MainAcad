@@ -10,7 +10,7 @@ jobs:
     # Be sure to update the tag on this image to a more stable version, using latest can result in unstable builds.
     working_directory: ~/Solution
     docker:
-      - image: microsoft/dotnet:latest 
+      - image: mcr.microsoft.com/dotnet/sdk:5.0 #microsoft/dotnet:latest 
     steps:
       # Checkout the code as the first step.
       - checkout
