@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
             name: enter project 143
-            command: cd ~/LabaWork143
+            command: cd /LabaWork143
       - run:
             working_directory: ~/LabaWork143
             name: Restore packages
